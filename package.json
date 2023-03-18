@@ -7,7 +7,10 @@
     "test": "runner",
     "prettier": "npx prettier --write .",
     "lint": "npx eslint .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "runner-in-prod-env": "cypress open --env version=prod",
+    "runner-in-test-env": "cypress open --env version=test",
+    "runner-in-uat-env": "cypress open --env version=uat"
   },
   "keywords": [
     "cypress",
